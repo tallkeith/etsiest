@@ -8,13 +8,13 @@ require 'etsy'
 Etsy.api_key = ENV['ETSY_KEY']
 
 module Etsiest
-	class Etsy < Sinatra::Application
-
-		# Etsy::Request.get('/listings/active', :includes => ['Images', 'Shop'], :keywords => 'whiskey')
+	class App < Sinatra::Application
 
 		get "/search" do 
 			query = params["q"]
-			erb :index
+			response = Etsy::Request.get('/listings/active', :includes => ['Images', 'Shop'], :keywords => query)
+			binding.pry
+			erb :index, locals: {results: response}
 		end
 
 		run! if app_file == $0

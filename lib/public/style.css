@@ -1,1 +1,29 @@
-style.css
+/******************************
+GENERAL
+******************************/
+.main {
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+.logo {
+	width: 100px;
+	float: left;
+	display: inline-block;
+}
+
+.topNav {
+	display: inline;
+}
+
+.topLinks {
+	float: left;
+}
+
+.searchBar {
+	float: right;
+}
+
+hr {
+	clear: both;
+}

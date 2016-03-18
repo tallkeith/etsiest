@@ -4,13 +4,33 @@
 		<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
-		<img src="https://www.etsy.com/?ref=lgo">
-		
-		<nav></nav>
-		
+		<div class="main">
+			<img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/c/ce/Etsy_logo.png">
+			<form class="searchBar">
+			  <input type="text" name="Search" value="Search for items or shops">
+			  <input type="submit" value="Search">
+			</form>
 
+			<hr>
+			<!-- begin topMenu -->
+			<!-- 	<div class="topMenu">
+						<div class="topNav">
+							<div class="topLinks">
+								<nav>
+									<ul>
+										<li class="inactive"><em> Clothing & Accessories </em></li>
+										<li class="active"><em> Jewelery </em></li>
+										<li class="inactive"><em> Craft Supplies & Tools </em></li>
 
+									</ul>
+								</nav>
+							</div>
+						</div>
+					</div> -->
+			<!-- end topMenu -->
+			<%= response %>
 
+		</div>
 	</body>
 
 </html>

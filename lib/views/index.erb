@@ -12,23 +12,14 @@
 			</form>
 
 			<hr>
-			<!-- begin topMenu -->
-			<!-- 	<div class="topMenu">
-						<div class="topNav">
-							<div class="topLinks">
-								<nav>
-									<ul>
-										<li class="inactive"><em> Clothing & Accessories </em></li>
-										<li class="active"><em> Jewelery </em></li>
-										<li class="inactive"><em> Craft Supplies & Tools </em></li>
 
-									</ul>
-								</nav>
-							</div>
-						</div>
-					</div> -->
-			<!-- end topMenu -->
-			<%= response %>
+			<ul class="search-results">
+				<% results.each do |item|%>
+					<li class="etsy-item"><%= item.price %><li>
+				<%end%>
+
+			</ul>
+			<%= results %>
 
 		</div>
 	</body>

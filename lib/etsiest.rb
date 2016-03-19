@@ -14,7 +14,7 @@ module Etsiest
 			query = params["q"]
 			response = Etsy::Request.get('/listings/active', :includes => ['Images', 'Shop'], :keywords => query)
 			binding.pry
-			erb :index, locals: {results: response}
+			erb :index, locals: {results: response.result}
 		end
 
 		run! if app_file == $0

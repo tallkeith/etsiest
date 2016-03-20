@@ -18,6 +18,11 @@ a {
 	color: #222;
 }
 
+a:hover {
+	text-decoration: underline;
+}
+
+
 .main {
 /*	padding-left: 10%;
 	padding-right: 10%;*/
@@ -137,3 +142,5 @@ a.etsy-shop {
 .description {
 	padding: 50px;
 }
+
+

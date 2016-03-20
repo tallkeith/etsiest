@@ -50,13 +50,13 @@
 				</div>
 			</div>
 		<!-- END SIDEBAR -->
-			<div class="listings">
+			<div class="listings" >
 				<ul class="search-results">
 					<% results.each do |item|%>
-					
+										
 					<div class="item-box">
 						<li>
-							<a href="<%= item["url"] %>">
+							<a title="<%=item["title"]%> <%= item["tags"]%>" class="tooltip" href="<%= item["url"] %>">
 							<img class="item_img" src="<%= item["Images"][0]["url_fullxfull"]%>"></a>
 						</li>
 						<li class="etsy-item"><a href="<%= item["url"] %>"><%= item["title"]%></a><li>

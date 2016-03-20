@@ -4,28 +4,55 @@
 		<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
+	<!-- BEGIN TOP MENU -->
 		<div class="main">
 			<img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/c/ce/Etsy_logo.png">
 			<form class="searchBar">
 			  <input type="text" name="Search" value="Search for items or shops">
 			  <input type="submit" value="Search">
 			</form>
-
 			<hr>
+		<!-- END TOP MENU -->
 
+		<!-- BEGIN SIDEBAR -->
 			<div class="sidebar-top">
 				Show Results For:
-					<ul class="menu-sidebar">All categories
-						<li>
-						</li>
-
+				<div class="menu-sidebar">
+					All categories
+					<ul>
+						<a href="/"><li class="menu-items">Art & Collectibles
+						</li></a>
+						<a href="/"><li class="menu-items">Home & Living
+						</li></a>
+						<a href="/"><li class="menu-items">Clothing
+						</li></a>
+						<a href="/"><li class="menu-items">Paper & Party Supplies
+						</li></a>
+						<a href="/"><li class="menu-items">Accessories
+						</li></a>
+						<a href="/"><li class="menu-items">Jewelry
+						</li></a>
+						<a href="/"><li class="menu-items">Craft Supplies & Tools
+						</li></a>
+						<a href="/"><li class="menu-items">Bags & Purses
+						</li></a>
+						<a href="/"><li class="menu-items">Electronics & Accessories
+						</li></a>
+						<a href="/"><li class="menu-items">Books, Movies & Music
+						</li></a>
+						<a href="/"><li class="menu-items">Bath & Beauty
+						</li></a>
+						<a href="/"><li class="menu-items">Toys & Games
+						</li></a>
+						<a href="/"><li class="menu-items">Weddings
+						</li></a>
 					</ul>
+				</div>
 			</div>
-
+		<!-- END SIDEBAR -->
 			<div class="listings">
 				<ul class="search-results">
 					<% results.each do |item|%>
-
 					<div class="item-box">
 						<li>
 							<a href="<%= item["url"] %>">

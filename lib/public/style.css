@@ -70,7 +70,12 @@ SIDEBAR
 	background-color: white;
 	border: 2px solid #ecf0f1;
 	height: 2200px;
+	padding: 10px;
 
+}
+
+.menu-items {
+	color: #019FCE;
 }
 
 /******************************

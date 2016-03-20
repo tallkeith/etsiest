@@ -1,15 +1,38 @@
 /******************************
 GENERAL
 ******************************/
-.main {
-	padding-left: 10%;
-	padding-right: 10%;
+
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
+body {
+	background-color: #F5F5F1;
+}
+
+a {
+	max-width: 225px;
+	text-decoration: none;
+	color: #222;
+}
+
+.main {
+/*	padding-left: 10%;
+	padding-right: 10%;*/
+	font-size: 14px;
+	
+}
+
+/******************************
+TOP NAV BAR
+******************************/
 .logo {
-	width: 100px;
+	width: 200px;
 	float: left;
 	display: inline-block;
+	padding-left: 75px;
 }
 
 .topNav {
@@ -22,8 +45,86 @@ GENERAL
 
 .searchBar {
 	float: right;
+	padding-right: 75px;
+	padding-top: 15px;
 }
 
 hr {
 	clear: both;
+}
+
+
+/******************************
+SIDEBAR
+******************************/
+
+.sidebar-top {
+	float: left;
+	padding-left: 50px;
+	margin-right: 2%;
+	width: 25%;
+	
+}
+
+.menu-sidebar {
+	background-color: white;
+	border: 2px solid #ecf0f1;
+	height: 2200px;
+
+}
+
+/******************************
+ITEMS
+******************************/
+
+.listings {
+
+}
+
+.item_img {
+	width: 100%;
+	height: 175px;
+	
+}
+
+li {
+	list-style-type: none;
+}
+
+.etsy-item {
+	margin: 5px;
+	max-width: 200px;
+	width: 225px;
+	white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.etsy-shop {
+	color: #9A9A9A;
+	margin: 5px;
+	font-size: 12px;
+}
+
+.search-results {
+
+}
+
+.item-box {
+	border: 2px solid #ecf0f1;
+	width: 225px;
+	max-height: 280px;
+	float: left;
+	margin-right: 2%;
+	margin-bottom: 2%;
+	background-color: white;
+}
+
+.item-price {
+	color: green;
+	float: right;
+}
+
+.description {
+	padding: 50px;
 }

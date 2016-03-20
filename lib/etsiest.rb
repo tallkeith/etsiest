@@ -13,7 +13,6 @@ module Etsiest
 		get "/search" do 
 			query = params["q"]
 			response = Etsy::Request.get('/listings/active', :includes => ['Images', 'Shop'], :keywords => query)
-			binding.pry
 			erb :index, locals: {results: response.result}
 		end
 

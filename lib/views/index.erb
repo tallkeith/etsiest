@@ -13,13 +13,32 @@
 
 			<hr>
 
-			<ul class="search-results">
-				<% results.each do |item|%>
-					<li class="etsy-item"><%= item.price %><li>
-				<%end%>
+			<div class="sidebar-top">
+				Show Results For:
+					<ul class="menu-sidebar">All categories
+						<li>
+						</li>
 
-			</ul>
-			<%= results %>
+					</ul>
+			</div>
+
+			<div class="listings">
+				<ul class="search-results">
+					<% results.each do |item|%>
+
+					<div class="item-box">
+						<li>
+							<a href="<%= item["url"] %>">
+							<img class="item_img" src="<%= item["Images"][0]["url_fullxfull"]%>"></a>
+						</li>
+						<li class="etsy-item"><a href="<%= item["url"] %>"><%= item["title"]%></a><li>
+						
+						<li class="etsy-shop"><a href="<%item["Shop"]["url"]%>"><%= item["Shop"]["shop_name"] %></a><span class="item-price"><%= item["price"] %><%= item["currency_code"]%></span></li>
+					</div>
+					<%end%>
+
+				</ul>
+			</div>
 
 		</div>
 	</body>

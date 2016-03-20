@@ -106,9 +106,13 @@ li {
 }
 
 .etsy-shop {
-	color: #9A9A9A;
+	
 	margin: 5px;
 	font-size: 12px;
+}
+
+a.etsy-shop {
+	color: #9A9A9A;
 }
 
 .search-results {

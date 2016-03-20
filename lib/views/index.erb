@@ -7,8 +7,8 @@
 	<!-- BEGIN TOP MENU -->
 		<div class="main">
 			<img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/c/ce/Etsy_logo.png">
-			<form class="searchBar">
-			  <input type="text" name="Search" value="Search for items or shops">
+			<form action="" method="get" class="searchBar">
+			  <input type="text" name="q" value="">
 			  <input type="submit" value="Search">
 			</form>
 			<hr>
@@ -53,6 +53,7 @@
 			<div class="listings">
 				<ul class="search-results">
 					<% results.each do |item|%>
+					
 					<div class="item-box">
 						<li>
 							<a href="<%= item["url"] %>">
@@ -60,7 +61,7 @@
 						</li>
 						<li class="etsy-item"><a href="<%= item["url"] %>"><%= item["title"]%></a><li>
 						
-						<li class="etsy-shop"><a href="<%item["Shop"]["url"]%>"><%= item["Shop"]["shop_name"] %></a><span class="item-price"><%= item["price"] %><%= item["currency_code"]%></span></li>
+						<li class="etsy-shop"><a href="<%= item["Shop"]["url"]%>"><%= item["Shop"]["shop_name"] %></a><span class="item-price"><%= item["price"] %><%= item["currency_code"]%></span></li>
 					</div>
 					<%end%>
 
